@@ -42,7 +42,7 @@ export default function MentorRegisterPage() {
     validateOnChange: false,
     onSubmit : async values => {
      values = await Object.assign(values, { mentorid : " ",studentassigned:false,studentsid:[] });
-            fetch("https://64a67bae096b3f0fcc7fddb1.mockapi.io/mentors", {
+            fetch("https://64ec4e09f9b2b70f2bfa11de.mockapi.io/mentors", {
                 method: "POST",
                 headers: {
                   "Content-Type": "application/json"
